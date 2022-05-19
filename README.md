@@ -1,4 +1,4 @@
-# My-PowerBI-Notes
+# My-Power-BI-Notes
   Those are my notes on learning PowerBI.
 
 ## What is PowerBI?
