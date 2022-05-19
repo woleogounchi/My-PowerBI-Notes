@@ -16,6 +16,6 @@
   - **Date and Time**: Functions that manipulate date and time (Ex: `TODAY()`, `MONTH()`, `YEAR()`);
   - **Logical**: Functions that operate on logical values (Ex: `AND()`, `OR()`, `IF)`);
   - **Text**: Functions that operate on text (Ex: `CONCATENATE()`, `LEFT()`, `UPPER()`);
-  - **Ect..**: and many other functions that could be found in (DAX function reference - Microsoft Docs)[https://docs.microsoft.com/en-us/dax/dax-function-reference]
+  - **Ect..**: and many other functions that could be found in [DAX function reference - Microsoft Docs](https://docs.microsoft.com/en-us/dax/dax-function-reference).
 
 
