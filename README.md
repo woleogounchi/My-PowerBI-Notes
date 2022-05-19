@@ -7,3 +7,15 @@
 
 ## Transforming Data
   Raw data usually does not arrive in the perfect form when accounting for things like human errors, bugs, and file conversion. Power BI accounts for this with the Power Query Editor which allows to transform data before loading them.
+
+## DAX
+  DAX stands for **Data Analysis eXtension**. It is a formula language used in Power BI that provides the ability to create columns, tables, and measures.
+  DAX is also used in other Microsoft tools including Analysis Services and Power Pivot.
+  DAX has over 200 different functions that fall into several categories:
+  - **Aggregation**: Functions that aggregate data (Ex: `SUM()`, `COUNT()`, `AVERAGE()`);
+  - **Date and Time**: Functions that manipulate date and time (Ex: `TODAY()`, `MONTH()`, `YEAR()`);
+  - **Logical**: Functions that operate on logical values (Ex: `AND()`, `OR()`, `IF)`);
+  - **Text**: Functions that operate on text (Ex: `CONCATENATE()`, `LEFT()`, `UPPER()`);
+  - **Ect..**: and many other functions that could be found in (DAX function reference - Microsoft Docs)[https://docs.microsoft.com/en-us/dax/dax-function-reference]
+
+
