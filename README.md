@@ -23,10 +23,12 @@ DAX has over 200 different functions that fall into several categories:
   - For evaluating each row
   - Add a new column in an existing table
   - Calculated at **data load** and when the data is refreshed
+  - Stored in memory: pre-calculated and appended to each row in a table and stored inside the data model
 
 * **Calculated measures**:
   - For aggregating multiple rows
   - Results in another field that you can add to a visualization
   - Calculated at ***query time** as you interact and filter
+  - Not stored in memory: Makes use of CPU and is re-calculated every time a filter/slicer changes
 
 
