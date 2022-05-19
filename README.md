@@ -18,4 +18,15 @@
   - **Text**: Functions that operate on text (Ex: `CONCATENATE()`, `LEFT()`, `UPPER()`);
   - **Ect..**: and many other functions that could be found in [DAX function reference - Microsoft Docs](https://docs.microsoft.com/en-us/dax/dax-function-reference).
 
+## Calculated columns vs. Calculated measures
+  * **Calculated columns**:
+    - For evaluating each row
+    - Add a new column in an existing table
+    - Calculated at **data load** and when the data is refreshed
+
+  * **Calculated measures**:
+    - For aggregating multiple rows
+    - Results in another field that you can add to a visualization
+    - Calculated at ***query time** as you interact and filter
+
 
