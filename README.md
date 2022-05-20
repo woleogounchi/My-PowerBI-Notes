@@ -31,4 +31,9 @@ DAX has over 200 different functions that fall into several categories:
   - Calculated at ***query time** as you interact and filter
   - Not stored in memory: Makes use of CPU and is re-calculated every time a filter/slicer changes
 
+## Context in DAX 
+In DAX, context enables dynamic analysis where results of a formula change to reflect the selected data.
+There are 3 types of context: **row**, **filter** and **query**.
+
+
 
