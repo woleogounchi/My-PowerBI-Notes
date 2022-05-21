@@ -35,5 +35,8 @@ DAX has over 200 different functions that fall into several categories:
 In DAX, context enables dynamic analysis where results of a formula change to reflect the selected data.
 There are 3 types of context: **row**, **filter** and **query**.
 
+## Quick Measures in DAX
+Quick Measures are a really powerful feature in DAX that allows to carry out complex calculations without needing to write the code fromm scratch. Basically, a quick measure will run a set of DAX commands behind the scenes and then will present the result to use in the report. Learn [more...](https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-quick-measures).
+
 
 
