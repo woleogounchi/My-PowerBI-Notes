@@ -44,3 +44,5 @@ Quick Measures are a really powerful feature in DAX that allows to carry out com
     => **Data Analysis & Visualization** 
       => **Dashboarding** 
         => **Commucating Insights/Reporting**
+
+## Data Preparation
