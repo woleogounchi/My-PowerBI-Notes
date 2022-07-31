@@ -46,3 +46,15 @@ Quick Measures are a really powerful feature in DAX that allows to carry out com
         => **Commucating Insights/Reporting**
 
 ## Data Preparation
+
+### Transforming text in Power BI
+ * We consider a clean text data when it is free of typos (it is recommended to fix those errors in the source file as possible before loading the data into Power BI). 
+
+ * The data should be consistently formatted meaning that the same data should not be represented in different ways, use uniform capitalization, avoid leading and trailing whitespace, same for punctuation (!) or control characters (\n, \r, etc.).
+
+ * Each column should only store one piece of information. For example, if a column stores the name of a person, the column should not store the age of the person. Therefore, columns should be either split or mergeed to achieve this outcome.
+
+### How to clean text data in Power BI
+* [Clean text data in Power BI - Microsoft Docs](https://docs.microsoft.com/en-us/power-bi/data-preparation/clean-text-data-in-power-bi)
+
+* Accessed from the *Transform* ribbon, use the *Format* option to change the capitalization and access *Trim & Clean* to remove leading and trailing whitespace with *Trim* and remove control characters (new line, carriage return, etc.) with *Clean*. *Trim & Clean* should be applied to all text columns.
