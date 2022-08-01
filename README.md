@@ -54,7 +54,34 @@ Quick Measures are a really powerful feature in DAX that allows to carry out com
 
  * Each column should only store one piece of information. For example, if a column stores the name of a person, the column should not store the age of the person. Therefore, columns should be either split or mergeed to achieve this outcome.
 
-### How to clean text data in Power BI
+#### How to clean text data in Power BI
 * [Clean text data in Power BI - Microsoft Docs](https://docs.microsoft.com/en-us/power-bi/data-preparation/clean-text-data-in-power-bi)
 
 * Accessed from the *Transform* ribbon, use the *Format* option to change the capitalization and access *Trim & Clean* to remove leading and trailing whitespace with *Trim* and remove control characters (new line, carriage return, etc.) with *Clean*. *Trim & Clean* should be applied to all text columns.
+
+### Numerical transformations in Power BI
+
+* The 1-10-100 rule: States that it costs $1 to a Data Analyst to verify that a single row of data is valid, it costs $10 to clean that row if any missing or incorrect data is found, and it will $100 if the data is not cleaned and left as is.
+
+* Ideally, numerical columns should be free from missing values and errors so that measures built with DAX would function properly. Outliers will also affect our analysis, but will require more advanced tools.
+
+* [Numerical transformations in Power BI - Microsoft Docs](https://docs.microsoft.com/en-us/power-bi/data-preparation/numerical-transformations-in-power-bi)
+
+* One of the most applied mathematical transformations is the **Absolute Value**. This transformation is used to remove negative values from a column.
+
+* **Logarithmic Transformation (Natural/Base 10)**: This transformation is used to transform a column into a logarithmic scale. It allows to translate an exponential relationship into a linear one. It's an advanced transformation that will only be applied if we have a good mathematical and statistical basis for using it.
+
+* **Multiplying by / Adding a scalar value**: can also be done with Power Query's numerical transformations.
+
+* **Rounding** our data in Power Query allows to save memory and make the columns of our datasets more readable by reducing the amount of decimal places. This comes in handy when we have huge datasets with a lot of rows.
+[Rounding in Power BI - Microsoft Docs](https://docs.microsoft.com/en-us/power-bi/data-preparation/rounding-in-power-bi)
+
+#### Date & Time transformations in Power BI
+Date and Time are considered as a special type of numerical data in Power Query.
+Special transformations could be applied to date and time columns. Such as:
+- Extracting the year, month, day, hour, minute, second, etc.
+- Start/end of the year, quarter, month, week, etc.
+- Extract age 
+
+
+
