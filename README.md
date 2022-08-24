@@ -39,10 +39,10 @@ There are 3 types of context: **row**, **filter** and **query**.
 Quick Measures are a really powerful feature in DAX that allows to carry out complex calculations without needing to write the code fromm scratch. Basically, a quick measure will run a set of DAX commands behind the scenes and then will present the result to use in the report. Learn [more...](https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-quick-measures).
 
 ## The Data Analytics Pipeline with Power BI
-  **1. Data Check** (Data Quality & Integrity Check)
-    Data Quality Check is a process that checks the data for errors and inconsistencies.
-    E.g. missing values, duplicate values, invalid values, etc.
-    We could also do a sense check with other internal data sources.
+**1. Data Check** (Data Quality & Integrity Check)
+Data Quality Check is a process that checks the data for errors and inconsistencies.
+E.g. missing values, duplicate values, invalid values, etc.
+We could also do a sense check with other internal data sources.
 
   **2. Data Exploration** 
     Exploring the data means asking ourselves a set of questions:
