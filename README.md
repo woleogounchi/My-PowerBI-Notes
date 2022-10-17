@@ -96,5 +96,21 @@ Special transformations could be applied to date and time columns. Such as:
 - Start/end of the year, quarter, month, week, etc.
 - Extract age 
 
+## Data Modeling
+
+### What is a data model?
+A data model is a representation of the data in a database (aconceptual view of data elements). It is a logical representation of the data and how it is related to each other (typically a visual representation). It is a blueprint of the data that will be stored in the database.
+Data models include:
+- **Entities (tables)**
+- **Attributes (columns)**
+- **Relationships (foreign keys)**
+- **Constraints (primary keys)**
+- **Hierarchies (parent-child relationships)**
+- **Data types**
+
+### Data Modeling in Power BI
+Data modeling consists in building a Data Model and in Power BI, that process is managed by **Power Query**, which is a tool that allows to import data from different sources, transform it and load it into the data model.
+
+
 
 
