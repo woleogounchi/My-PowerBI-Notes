@@ -96,6 +96,40 @@ Special transformations could be applied to date and time columns. Such as:
 - Start/end of the year, quarter, month, week, etc.
 - Extract age 
 
+## Data Transformation
+
+### Data Transformation in Power BI
+Data transformation is the process of converting data from one format to another. It is a crucial step in the data analytics pipeline as it allows to prepare the data for analysis and visualization.
+
+### Dataset shapes
+A dataset could take 2 main structures:
+- **Wide**: Each column represents a different variable and each row represents a different observation.
+- **Long**: Each column represents a different observation and each row represents a different variable.
+
+### Data Shaoe Transformation in Power BI
+There is 2 ways to transform the shape of a dataset in Power BI:
+- **Pivot/Unpivot**: Transforming a **long disaggregated dataset** into a **wide aggregated dataset** and vice versa.
+- **Transpose**: which means to swap the rows and columns of a dataset.
+* [Data shape transformation in Power BI - Microsoft Docs](https://docs.microsoft.com/en-us/power-bi/data-preparation/data-shape-transformation-in-power-bi)
+
+### Group by Transformation in Power BI
+Grouping allows to aggregate our data by changing the granularity of our dataset. It is a very useful transformation that allows to reduce the size of our dataset and to make it more readable.
+After choosing a granularity, we can apply an aggregation function to our data.
+There is many aggregation functions that we could apply:
+- **Count**: Counts the number of rows in a group.
+- **Count Distinct**: Counts the number of distinct values in a group.
+- **Sum**: Sums the values in a group.
+- **Average**: Calculates the average of the values in a group.
+- **Min**: Calculates the minimum value in a group.
+- **Max**: Calculates the maximum value in a group.
+- **Median**: Calculates the median value in a group.
+- **Mode**: Calculates the mode value in a group.
+- **StDev**: Calculates the standard deviation of the values in a group.
+- **Ect.**
+- **Custom Aggregation**: Allows to create our own aggregation function.
+
+
+
 ## Data Modeling
 
 ### What is a data model?
