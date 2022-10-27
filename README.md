@@ -145,6 +145,16 @@ Data models include:
 ### Data Modeling in Power BI
 Data modeling consists in building a Data Model and in Power BI, that process is managed by **Power Query**, which is a tool that allows to import data from different sources, transform it and load it into the data model.
 
+### Database normalization
+Database normalization is a set of logical rules and processes that allows to reduce data redundancy and improve data integrity. 
+It is a process that consists in dividing a large table into smaller tables and defining relationships between them. It is a process that is applied to relational databases.
+
+#### Data shaping in Power Query
+Power Query includes several data shaping operations to get closer to a normalized data model. These operations are:
+1. **Column splitting**: breaks one column into multiple columns based on split criteria (like after a delimiter such as comma or tilda, or splitting after a set number of characters).
+2. **Column extraction**: takes a column from table and breaks them out into multiple tables. Keep a key on the original table to know which values fit together.
+3. **Query merging**: joins together two existing tables based on values from one or more columns (Types of joins: inner, left outer, right outer, full outer).
+4. **Query appending**: combines contents of two table into a single table. It matches rows based on column names adding NULL for missing columns. It's equivalent to a UNION ALL in SQL.
 
 
 
