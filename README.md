@@ -149,12 +149,26 @@ Data modeling consists in building a Data Model and in Power BI, that process is
 Database normalization is a set of logical rules and processes that allows to reduce data redundancy and improve data integrity. 
 It is a process that consists in dividing a large table into smaller tables and defining relationships between them. It is a process that is applied to relational databases.
 
-#### Data shaping in Power Query
+### Data shaping in Power Query
 Power Query includes several data shaping operations to get closer to a normalized data model. These operations are:
 1. **Column splitting**: breaks one column into multiple columns based on split criteria (like after a delimiter such as comma or tilda, or splitting after a set number of characters).
 2. **Column extraction**: takes a column from table and breaks them out into multiple tables. Keep a key on the original table to know which values fit together.
 3. **Query merging**: joins together two existing tables based on values from one or more columns (Types of joins: inner, left outer, right outer, full outer).
 4. **Query appending**: combines contents of two table into a single table. It matches rows based on column names adding NULL for missing columns. It's equivalent to a UNION ALL in SQL.
+
+### Dimensional modeling
+Also called **The Kimball Model**, it comprises 2 key concepts:
+- **Facts**: numerical values that are measured and are the basis of our analysis (i.e. metrics from a business process).
+- **Dimensions**: attributes that describe the facts (i.e. the date, the product, the customer, etc.), they basically provide context surrounding a business process.
+Those 2 concepts combine to form the **Star Schema**, a data model used to represent the relationships between facts and dimensions. Star shemas are used in data warehouses and are a very common data model used in the business intelligence industry. Power BI is optimized to use star schemas over any other ways of loading data.
+
+#### Fact tables
+Fact tables are typically composed of 2 columns:
+- **Facts (measures)**: measurements or metrics from our business process (e.g. sales, employee counts or number of website visits).
+- **Keys**: used to establish relationships between fact tables and dimension tables.
+
+#### Dimension tables
+Dimension tables provide context around facts. They are shared business concepts (e.g. person, employee, customer, vendor). They contain static or slowly changes data (e.g. name, date of birth or height).
 
 
 
