@@ -170,7 +170,13 @@ Fact tables are typically composed of 2 columns:
 #### Dimension tables
 Dimension tables provide context around facts. They are shared business concepts (e.g. person, employee, customer, vendor). They contain static or slowly changes data (e.g. name, date of birth or height).
 
-### Snowflake schema
+#### Snowflake schema
+The **Snowflake Schema** is like a Star Schema with the particularity that it allows relationships between dimension tables.
+
+#### Star vs Snowflake schema
+The **star schemas** is the most preferred approach as it is the one business users understand the most and it has been optimized for BI tools.
+
+The **snowflake schemas** are mostly used in data warehouses and they allow updating data more efficiently.
 
 
 
