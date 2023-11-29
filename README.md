@@ -7,9 +7,19 @@ Those are my notes on learning PowerBI.
 PowerBI is a Microsoft data visualization and analytics platform that allows to interactively explore data to gain insights.
 it enables you to effectively report insights through easy-to-use customizable visualizations.
 
-## Transforming Data
+## Data Transformation in Power BI
 
 Raw data usually does not arrive in the perfect form when accounting for things like human errors, bugs, and file conversion. Power BI accounts for this with the Power Query Editor which allows to transform data before loading them.
+
+### Reshaping our dataset
+
+There are 2 transformation in Power Query that allows us which allow us to alter the structure of our dataset from long to wide and vice versa. They are called **Pivot** and **Unpivot**. 
+
+**Pivoting** a table allows to construct new columns in our dataset based on based on the values contained in a selected column.
+
+**Unpivoting** on the other hand allows us to select one or more columns to flatten, which transforms the selected columns into a category-value pair.
+
+There's also the **Transpose** transformation which switches the rows in our dataset with the columns and vice versa. This transformation can come in handy when we wish to change the orientation of our dataset without necessarily doing any aggregations on the underlying data as would be the case with the pivot transformation. Transposing twice get us back to the original dataset.   
 
 ## DAX
 
