@@ -19,7 +19,9 @@ There are 2 transformation in Power Query that allows us which allow us to alter
 
 **Unpivoting** on the other hand allows us to select one or more columns to flatten, which transforms the selected columns into a category-value pair.
 
-There's also the **Transpose** transformation which switches the rows in our dataset with the columns and vice versa. This transformation can come in handy when we wish to change the orientation of our dataset without necessarily doing any aggregations on the underlying data as would be the case with the pivot transformation. Transposing twice get us back to the original dataset.   
+There's also the **Transpose** transformation which switches the rows in our dataset with the columns and vice versa. This transformation can come in handy when we wish to change the orientation of our dataset without necessarily doing any aggregations on the underlying data as would be the case with the pivot transformation. Transposing twice get us back to the original dataset.
+
+**Aggregating** with group by transformation - There are times when we want to work with a summarized version of our dataset by changing the granularity of the data. To do this, we use Power Query's Group By function.  
 
 ## DAX
 
