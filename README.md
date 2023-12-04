@@ -21,7 +21,18 @@ There are 2 transformation in Power Query that allows us which allow us to alter
 
 There's also the **Transpose** transformation which switches the rows in our dataset with the columns and vice versa. This transformation can come in handy when we wish to change the orientation of our dataset without necessarily doing any aggregations on the underlying data as would be the case with the pivot transformation. Transposing twice get us back to the original dataset.
 
-**Aggregating** with group by transformation - There are times when we want to work with a summarized version of our dataset by changing the granularity of the data. To do this, we use Power Query's Group By function.  
+**Aggregating** with group by transformation - There are times when we want to work with a summarized version of our dataset by changing the granularity of the data. To do this, we use Power Query's Group By function.
+
+### Combining data in Power Query
+
+Data to be analyzed could be stored in multiple sheets, as they could be coming from more than one source. Therefore, we will need to combine them to be able to perform our analysis.
+
+We use **Append Queries** when we are dealing with: 
+* Many separate files with similar data or, 
+* Data too large to be stored in one file.
+Append queries will rows to our table, vertically combining queries. However, we have to make sure columns name are the same. Otherwise, null values will appear in the table. More on this [here](https://learn.microsoft.com/en-us/power-query/append-queries).
+
+**Merge Queries** is used when we are working with data that have several tables, but one or more common columns in those tables. This is most often encountered when connecting to a data model with a **Star** or **Snowflake** schema. In some cases, we would to combine those tables together to make a "flatter" file structure. 
 
 ## DAX
 
